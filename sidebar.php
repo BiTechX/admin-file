@@ -104,7 +104,7 @@ if(count($results_count) >= 1){
                 </a>
             </li>
             <li >
-                <a href="https://fitprobizlaunch.com/logout">
+                <a href="<?php echo site_url();?>/logout">
     
                    
                     

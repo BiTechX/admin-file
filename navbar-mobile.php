@@ -6,7 +6,7 @@
     aria-label="Toggle navigation" style="outline:none;height: 81px;border-radius:0px;">
     <i class="flaticon-menu-1 white"></i>
     </button>
-    <a class="navbar-brand padding-15px-vertical" href="homepage.php" style="margin-right:0px;"><img src="https://fitprobizlaunch.com/wp-content/uploads/2019/04/logo.png" style="width:40px;"></a> 
+    <a class="navbar-brand padding-15px-vertical" href="homepage.php" style="margin-right:0px;"><img src="https://intensefitnessacademy.com/wp-content/uploads/2019/09/logo.png" style="width:40px;"></a> 
    <!-- <div class="d-flex align-items-center">
         <div class="d-flex mr-2">
                 <i class="flaticon-shopping-cart white" style="font-size:32px;margin-top:5px" ><a class="" href="#"></a></i>
@@ -48,7 +48,7 @@
                     <a class="nav-link" href="<?php echo $url;?>settings_1_profile.php">Settings</a>
                 </li>
                 <li class="nav-item white text-center">
-                    <a class="nav-link" href="https://fitprobizlaunch.com/logout">Signout</a>
+                    <a class="nav-link" href='<?php echo site_url();?>/logout'>Signout</a>
                 </li>
                 
                 <!--

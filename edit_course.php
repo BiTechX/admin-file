@@ -412,18 +412,20 @@ $tags = get_the_tags($results[0]["ID"]);
                             type: 'POST',
                             beforeSend : function()
                             {
-                                //console.log("SENDING"+total_files[0].name);//can add animation before send
+                                console.log("SENDING"+total_files[0].name);//can add animation before send
                             },
                             success: function(data)
                             {
+                                //console.log(data);
                                 link = data;
                                 jQuery("#FeaturedImageLink").val(link);
                                 var postvalue =  jQuery("#AddCourse").serialize();
+                                postvalue = postvalue + "&userLevel="+res;
                                 var url = "<?php echo FITPRO_THEME_BTX_fun_course_update_api_url();?>";
                                 //console.log(postvalue);
                                 $.post(url,postvalue,function(response){
                                     var jsonData = jQuery.parseJSON(response);
-                                    //console.log(jsonData);
+                                    console.log(jsonData);
                                     location.reload();
                                 });
                             },
@@ -438,7 +440,7 @@ $tags = get_the_tags($results[0]["ID"]);
                         var postvalue =  jQuery("#AddCourse").serialize();
                         postvalue = postvalue + "&userLevel="+res;
                         var url = "<?php echo FITPRO_THEME_BTX_fun_course_update_api_url();?>";
-                        //console.log(postvalue);
+                        console.log(postvalue);
                         $.post(url,postvalue,function(response){
                             var jsonData = jQuery.parseJSON(response);
                             //console.log(jsonData);
